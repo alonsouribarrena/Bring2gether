@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center"><span style="color: aquamarine">Bob</span>'s Bakery</h1>
+                <h1 class="text-center"><span style="color: aquamarine">Uri</span>'s Bakery</h1>
             </div>
         </div>
         <div class="row">
@@ -133,27 +133,27 @@
             <div class="col-12">
                 <form id="orderForm">
                     <div class="form-group row">
-                      <label for="inputEmail3" class="col-12 col-form-label">Email</label>
+                      <label for="inputEmail3" class="col-12 col-form-label">Name</label>
                       <div class="col-12">
-                        <input id="emailform" type="email" class="form-control" id="inputEmail3" placeholder="Your Email">
+                        <input id="person" class="form-control" placeholder="Name">
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label  for="inputDate3" class="col-sm-12 col-form-label">Date</label>
+                      <label class="col-sm-12 col-form-label">Date</label>
                       <div class="col-sm-12">
-                        <input id="dateform" type="date" class="form-control" id="inputDate3" placeholder="Date">
+                        <input type="date" class="form-control" id="date" placeholder="Date">
                       </div>
                     </div>
                     <div class="form-group row">
                         <label  for="inputEmail3" class="col-12 col-form-label">Flavour</label>
                         <div class="col-12">                          
-                          <select id="flavourform" class="form-control" id="inputGroupSelect01">
+                          <select id="flavour" class="form-control" id="inputGroupSelect01">
                             <option selected>Choose...</option>
-                            <option value="1">Vanille</option>
-                            <option value="2">Chocolate</option>
-                            <option value="3">Strawberry</option>
-                            <option value="3">Lemon</option>
-                            <option value="3">White Chocolate</option>
+                            <option value="Vanille">Vanille</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Strawberry">Strawberry</option>
+                            <option value="Lemon">Lemon</option>
+                            <option value="White Chocolate">White Chocolate</option>
                           </select>
                         </div>
                       </div>
@@ -162,13 +162,13 @@
                         <legend class="col-form-label col-sm-12 pt-0">Pick-up</legend>
                         <div  class="col-sm-12 d-flex flex-row gap-2">
                           <div class="form-check ">
-                            <input id="pickup" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <input id="pickup" class="form-check-input" type="radio" name="gridRadios" id="PickUpY" value="to Pick-up" checked>
                             <label class="form-check-label" for="gridRadios1">
                               Yes
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="PickUpN" value="Not to Pick-up">
                             <label class="form-check-label" for="gridRadios2">
                               No
                             </label>
@@ -180,25 +180,25 @@
                       <div  class="col-sm-3 mb-3 mt-3">Toppings?</div>
                       <div id="toppings" class="col-sm-3 d-flex flex-row gap-2 mb-3 mt-3">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                <input class="form-check-input" type="checkbox" id="fruitTop" value="Fruit">
                                 <label class="form-check-label" for="gridCheck1">
                                     Fruit
                                 </label>
                             </div>
                             <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <input class="form-check-input" type="checkbox" id="sprinklesTop">
                                     <label class="form-check-label" for="gridCheck1">
                                     Sprinkles
                                     </label>
                             </div>                        
                             <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <input class="form-check-input" type="checkbox" id="creamTop">
                                     <label class="form-check-label" for="gridCheck1">
                                     Cream
                                     </label>
                             </div>
                             <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <input class="form-check-input" type="checkbox" id="custarTop">
                                     <label class="form-check-label" for="gridCheck1">
                                     Custard
                                     </label>
@@ -209,7 +209,9 @@
                         <div class="row">
                             <div class="col-12">
                                 <div id="orderbtn" class="form-group row">
-                                        <button onclick="myFunction()" id="submit" type="submit" class="btn btn-primary btn-lg btn-block mb-3 mt-3">Make An Order</button>
+                                        <!-- <button onclick="myFunction()"  id="submit" type="submit" class="btn btn-primary btn-lg btn-block mb-3 mt-3">Make An Order</button> -->
+                                        <button id="btn" class="btn btn-primary btn-lg btn-block mb-3 mt-3">Make An Order</button>
+                                        <!-- <button id="btn">clickme</button> -->
                                 </div>
                             </div>
                         </div>
